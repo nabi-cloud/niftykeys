@@ -1,0 +1,899 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Page Styles
+======================================== */
+
+
+/* 1. Global Styles
+======================================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    height: 100;
+}
+
+.solid-btn-1 {
+    background-color: #FF930F;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 0 0 0 0 #fff95b;
+    color: black;
+    cursor: pointer;
+    margin-top: 1.875rem;
+    transition: ease-out 0.3s;
+    height: 2.625rem;
+    width: 8.438rem;
+}
+
+.solid-btn-1:link {
+    background-color: #FF930F;
+    box-shadow: inset 0 0 0 0 #fff95b;
+}
+
+.solid-btn-1:visited {
+    background-color: #FF930F;
+    box-shadow: inset 0 0 0 0 #fff95b;
+}
+
+.solid-btn-1:hover {
+    box-shadow: inset 8.438rem 0 0 0 #fff95b;
+}
+
+.solid-btn-1:active {
+    box-shadow: inset 8.438rem 0 0 0 #fff95b;
+}
+
+.solid-btn-2 {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 #000;
+    color: black;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    height: 2.625rem;
+    width: 8.438rem;
+}
+
+.solid-btn-2:link {
+    background-color: white;
+    box-shadow: inset 0 0 0 0 #000;
+}
+
+.solid-btn-2:visited {
+    background-color: white;
+    box-shadow: inset 0 0 0 0 #000;
+}
+
+.solid-btn-2:hover {
+    box-shadow: inset 8.438rem 0 0 0 #000;
+    color: #fff;
+}
+
+.solid-btn-2:active {
+    box-shadow: inset 8.438rem 0 0 0 #000;
+    color: #fff;
+}
+
+.outline-btn-1 {
+    background-color: transparent;
+    border: 2px solid #FF930F;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 #FF930F;
+    color: #FF930F;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    height: 2.625rem;
+    width: 8.438rem;
+}
+
+.outline-btn-1:link {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0 #FF930F;
+}
+
+.outline-btn-1:visited {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0 #FF930F;
+}
+
+.outline-btn-1:hover {
+    box-shadow: inset 8.438rem 0 0 0 #FF930F;
+    color: #000;
+}
+
+.outline-btn-1:active {
+    box-shadow: inset 8.438rem 0 0 0 #FF930F;
+    color: #000;
+}
+
+.outline-btn-2 {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 #000;
+    color: black;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+    height: 2.625rem;
+    width: 8.438rem;
+}
+
+.outline-btn-1:link {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0 #000;
+}
+
+.outline-btn-1:visited {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0 #000;
+}
+
+.outline-btn-2:hover {
+    box-shadow: inset 8.438rem 0 0 0 #000;
+    color: #fff;
+}
+
+.outline-btn-2:active {
+    box-shadow: inset 8.438rem 0 0 0 #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+    .solid-btn-1,
+    .solid-btn-2,
+    .outline-btn-1,
+    .outline-btn-2 {
+        border-radius: 6px;
+        height: 2.188rem;
+        width: 7rem;
+    }
+}
+
+
+/* 2. Typography Styles
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Montserrat', sans-serif;
+    transition: font-size .75s ease;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+li,
+a {
+    font-family: 'Montserrat', sans-serif;
+    transition: font-size .75s ease;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#hero p { /*Specific Styling*/
+    color: white;
+}
+
+#contact h2 {
+    font-size: 2.25rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#testimonial .quote {
+    line-height: 2;
+}
+
+footer p {
+    font-size: 0.938rem;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
+    button {
+        font-size: 0.875rem;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
+
+
+/* 3. Structure Styles
+======================================== */
+main .content {
+    padding: 6.25rem;
+}
+
+.heading {
+    padding-bottom: 1.25rem;
+}
+
+@media screen and (max-width: 810px) {
+    main .content {
+        padding: 1.875rem;
+    }
+}
+
+/* 4. Module Styles
+======================================== */
+header { /*Navigation Bar*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header .navbar { 
+    align-content: center;
+    background-color: white;
+    border-bottom: rgba(255, 147, 15, 0.5) solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 3.75rem;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 1.875rem 0 1.875rem;   
+}
+
+header .logo {
+    height: 3.125rem;
+    width: 10rem;
+}
+
+header .link-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-container .links {
+    display: flex;
+    justify-content: space-around;
+    width: 25rem;
+}
+
+.links .link-item {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    position: relative;
+}
+
+.link-item:link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.link-item:visited {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.link-item:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.link-item:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.links .link-item::after {
+    content: "";
+    position: absolute;
+    background-color: #FF930F;
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+    top: -8px;
+}
+
+.links .link-item:hover::after {
+    width: 100%;
+}
+
+.link-container .button {
+    margin-left: 1.8rem;
+}
+
+@media screen and (max-width: 810px) {
+    header .navbar {
+        padding: 0 1rem;
+    }
+
+    .link-container .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .navbar {
+        height: 3.125rem;
+    }
+    
+    header .logo {
+        height: 2.188rem;
+        width: 7.813rem;
+    }
+}
+
+
+footer { /*Page Footer*/
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(270deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(270deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(270deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#fff95b", GradientType=1 );
+}
+
+#links {
+    padding: 3.125rem 6.25rem;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.container-1 .item-2 {
+    display: flex;
+    justify-content: baseline;
+}   
+
+.container-1 .solid-btn-2 {
+    margin-right: 1.25rem;
+}
+
+footer .separator {
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+}
+
+.container-2 {
+    align-content: baseline;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+}
+
+.container-2 .social {
+    display: flex;
+    justify-content: baseline;
+    column-gap: 0.938rem;
+}
+
+footer img {
+    opacity: 0.75;
+}
+
+footer img:link {
+    opacity: 0.75;
+}
+
+footer img:visited {
+    opacity: 0.75;
+}
+
+footer img:hover {
+    opacity: 1;
+}
+
+footer img:active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 810px) {
+    #links {
+        padding-right: 1.875rem;
+        padding-left: 1.875rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer .logo {
+        height: 2.188rem;
+        width: 7.813rem;
+    }
+
+    .item-2 .solid-btn-2 {
+        margin-right: 0;
+    }
+
+    .item-2 .desktop {
+        display: none;
+    }
+
+    #social-item p {
+        display: none;
+    }
+
+    footer img {
+        height: 1.875rem;
+    }
+}
+
+
+/* 5. Page Styles
+======================================== */
+#hero {
+    background-image: url(../resources/hero-img.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 40rem;
+}
+
+#hero .content {
+    position: relative;
+    top: 5%;
+}
+
+@media screen and (max-width: 810px) {
+    #hero {
+        background-size: 133%;
+        background-position: top;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #hero {
+        background-size: cover;
+        background-position: top;
+    }
+
+    #hero .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90%;
+        text-align: center;
+    }
+}
+
+
+#partners .text.container { /*Brands Section*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#partners .paragraph {
+    text-align: center;
+    width: 50%;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#partners .brands {
+    margin: 3rem 0 0 0;
+    overflow: hidden;
+    padding: 2rem 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+#partners .brands::before,
+#partners .brands::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 18rem;
+    z-index: 2;
+}
+
+#partners .brands::before {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    left: 0;
+}
+
+#partners .brands::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    right: 0;
+}
+
+#partners .brands:hover .brand-slide {
+    animation-play-state: paused;
+}
+
+#partners .brand-slide {
+    animation: 30s slide infinite linear;
+    display: inline-block;
+}
+
+#partners .brands img {
+    height: 3.125rem;
+    margin: 0 1.875rem;
+    opacity: 0.75;
+}
+
+#partners .brands img:link {
+    opacity: 0.75;
+}
+
+#partners .brands img:visited {
+    opacity: 0.75;
+}
+
+#partners .brands img:hover {
+    opacity: 1;
+}
+
+#partners .brands img:active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 810px) {
+    #partners .content {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+    }
+
+    #partners .paragraph {
+        width: 75%;
+    }
+
+    #partners .brands img {
+        height: 2.5rem;
+    }
+
+    #partners .brands::before,
+    #partners .brands::after {
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #partners .brands::before,
+    #partners .brands::after {
+        width: 4rem;
+    }
+}
+
+
+#about .container { /*About Section*/
+    display: flex;
+    height: 36.5rem;
+}
+
+#about .image {
+    background-image: url(../resources/about-img.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 100%;
+    width: 50%;
+}
+
+#about .text {
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#fff95b", GradientType=1 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6.25rem;
+    height: 100%;
+    width: 50%;
+}
+
+#about #mission {
+    margin-bottom: 1.875rem;
+}
+
+#about .separator {
+    border-color: rgba(0, 0, 0, 0.5)
+}
+
+#about #vision {
+    margin-top: 1.875rem;
+}
+
+@media screen and (max-width: 810px) {
+    #about .desktop {
+        display: none;
+    }
+
+    #about .text {
+        padding: 4.375rem 4.6rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #about .container { /*About Section*/
+        height: auto;
+    }
+    
+    #about .text {
+        padding: 3.125rem 1.875rem;
+    }
+}
+
+
+#products .text { /*Product Section*/
+    text-align: center;
+}
+
+#products .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3.125rem 0;
+    row-gap: 3.125rem;
+}
+
+#products .card-container {
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.card-container img {
+    display: block;
+    height: 14rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-container .card-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3.125rem 0;
+    width: 74%;
+}
+
+@media screen and (max-width: 810px) {
+    #products .content {
+        padding: 4.375rem 1.875rem;
+    }
+
+    #products .desktop {
+        display: none;
+    }
+
+    #products .container {
+        column-gap: 1.875rem;
+        row-gap: 1.875rem;
+    }
+
+    #products .card-container {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #products .content {
+        padding: 3.125rem 1.875rem;
+    }
+
+    #products .tablet {
+        display: none;
+    }
+
+    #products .card-container {
+        width: 100%;
+    }
+}
+
+
+#testimonial .container { /*Testimonial Section*/
+    align-items: center;
+    display: flex;
+    height: 25.25rem;
+}
+
+#testimonial .text { 
+    background: hsla(33, 100%, 53%, 1);
+    background: linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff930f", endColorstr="#fff95b", GradientType=1 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6.25rem;
+    height: 100%;
+    width: 70%;
+}
+
+#testimonial .image {
+    background-image: url(../resources/testimonial-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+}
+
+#testimonial .star-container {
+    display: flex;
+    column-gap: 0.625rem;
+}
+
+#star-item {
+    height: 2.813rem;
+    width: 2.813rem;
+}
+
+#testimonial h4 {
+    margin: 0.625rem 0 1.875rem 0;
+}
+
+#testimonial .profile {
+    align-items: center;
+    display: flex;
+}
+
+#testimonial .avatar {
+    margin-right: 1.25rem;
+}
+
+@media screen and (max-width: 810px) {
+    #testimonial .container {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #testimonial .text {
+        padding: 4.375rem;
+        width: 100%;
+    }
+
+    #testimonial .image {
+        height: 20rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #star-item {
+        height: 1.563rem;
+        width: 1.563rem;
+    }
+
+    #testimonial .text {
+        padding: 3.125rem 1.875rem;
+    }
+
+    #testimonial .image {
+        background-position: center;
+        height: 15rem;
+    }
+}
+
+
+#contact .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact .heading {
+    text-align: center;
+    width: 60%;
+}
+
+@media screen and (max-width: 810px) {
+    #contact .heading {
+        width: 100%;
+    }
+
+    #contact .content {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+}
