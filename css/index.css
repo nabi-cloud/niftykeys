@@ -458,23 +458,23 @@ footer .separator {
     column-gap: 0.938rem;
 }
 
-footer img {
+footer .container-2 img {
     opacity: 0.75;
 }
 
-footer img:link {
+footer .container-2 img:link {
     opacity: 0.75;
 }
 
-footer img:visited {
+footer .container-2 img:visited {
     opacity: 0.75;
 }
 
-footer img:hover {
+footer .container-2 img:hover {
     opacity: 1;
 }
 
-footer img:active {
+footer .container-2 img:active {
     opacity: 1;
 }
 
